@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-brand-charcoal antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block border border-brand-beige bg-brand-beige px-8 py-3 text-xs font-sans tracking-widest-xl text-brand-charcoal transition-all duration-300 hover:bg-transparent hover:text-brand-charcoal uppercase;
+  }
+  .btn-outline {
+    @apply inline-block border border-white/60 px-8 py-3 text-xs font-sans tracking-widest-xl text-white transition-all duration-300 hover:bg-white/10 uppercase;
+  }
+  .btn-outline-dark {
+    @apply inline-block border border-brand-charcoal/40 px-8 py-3 text-xs font-sans tracking-widest-xl text-brand-charcoal transition-all duration-300 hover:bg-brand-charcoal hover:text-white uppercase;
+  }
+  .section-heading {
+    @apply text-xs font-sans tracking-widest-xl uppercase text-brand-warm-gray mb-4;
+  }
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl italic font-normal;
+  }
+}
