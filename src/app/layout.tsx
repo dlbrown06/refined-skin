@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "microchanneling",
     "dermaplaning",
   ],
+  icons: [],
   openGraph: {
     title: "Refined Skin & Acne Clinic",
     description:
