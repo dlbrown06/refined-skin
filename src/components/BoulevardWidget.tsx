@@ -9,27 +9,16 @@ const BLVD_BOOKING_URL = `https://www.joinblvd.com/b/${BLVD_BUSINESS_ID}`;
 
 export default function BoulevardWidget() {
   useEffect(() => {
-    const w = window as any;
-
-    // Pre-configure blvd object BEFORE loading the script.
-    // The injector reads from this object during initialization.
-    // On the original domain (refined.skin) the injector auto-detects
-    // the business ID, but on other domains we must set it explicitly.
-    if (!w.blvd) {
-      w.blvd = {};
-    }
-    w.blvd.businessId = BLVD_BUSINESS_ID;
-    w.blvd.hash = "#book-now";
-
-    // Load Boulevard injector script
+    // Load Boulevard injector script.
+    // On the production domain (refined.skin) the injector auto-detects
+    // the business ID and handles #book-now hash changes natively.
+    // On other domains (Vercel previews) it loads but can't resolve the
+    // business ID, so we fall back to opening the booking page directly.
     const script = document.createElement("script");
     script.src = "https://static.joinboulevard.com/injector.min.js";
     script.async = true;
     document.head.appendChild(script);
 
-    // The injector automatically detects #book-now hash changes and
-    // opens the booking widget. We just need a fallback click handler
-    // for cases where the injector hasn't loaded yet.
     const handleClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const anchor = target.closest(
@@ -37,15 +26,21 @@ export default function BoulevardWidget() {
       ) as HTMLAnchorElement | null;
       if (!anchor) return;
 
-      // Check if Boulevard widget is ready
+      const w = window as any;
       const blvd = w.blvd;
-      if (blvd && typeof blvd.openBookingWidget === "function") {
-        // Widget is loaded — let the hash change happen naturally,
-        // the injector will pick it up. No need to preventDefault.
+
+      // If the injector loaded AND recognized the domain (businessId is set),
+      // let the hash change happen naturally — the injector handles it.
+      if (
+        blvd &&
+        blvd.businessId &&
+        typeof blvd.openBookingWidget === "function"
+      ) {
         return;
       }
 
-      // Fallback if injector hasn't loaded: open booking page directly
+      // Fallback: open the Boulevard booking page directly.
+      // This covers Vercel preview URLs and slow-loading scenarios.
       e.preventDefault();
       window.open(BLVD_BOOKING_URL, "_blank", "noopener,noreferrer");
     };
