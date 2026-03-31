@@ -7,6 +7,19 @@ const BLVD_BOOKING_URL = `https://www.joinblvd.com/b/${BLVD_BUSINESS_ID}`;
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+function openBlvdBooking() {
+  const w = window as any;
+  const blvd = w.Boulevard || w.blvd;
+  if (blvd && typeof blvd.openBookingWidget === "function") {
+    blvd.openBookingWidget();
+  } else if (blvd && typeof blvd.open === "function") {
+    blvd.open();
+  } else {
+    // Fallback: open booking page directly
+    window.open(BLVD_BOOKING_URL, "_blank", "noopener,noreferrer");
+  }
+}
+
 export default function BoulevardWidget() {
   useEffect(() => {
     // Load Boulevard injector script
@@ -24,15 +37,7 @@ export default function BoulevardWidget() {
       ) as HTMLAnchorElement | null;
       if (anchor) {
         e.preventDefault();
-        // Try Boulevard's built-in API
-        const w = window as any;
-        const blvd = w.Boulevard || w.blvd;
-        if (blvd && typeof blvd.open === "function") {
-          blvd.open();
-        } else {
-          // Fallback: open booking page directly
-          window.open(BLVD_BOOKING_URL, "_blank", "noopener,noreferrer");
-        }
+        openBlvdBooking();
       }
     };
 
@@ -41,13 +46,7 @@ export default function BoulevardWidget() {
     // Also handle initial hash if page loads with #book-now
     if (window.location.hash === "#book-now") {
       setTimeout(() => {
-        const w = window as any;
-        const blvd = w.Boulevard || w.blvd;
-        if (blvd && typeof blvd.open === "function") {
-          blvd.open();
-        } else {
-          window.open(BLVD_BOOKING_URL, "_blank", "noopener,noreferrer");
-        }
+        openBlvdBooking();
       }, 2000);
     }
 
