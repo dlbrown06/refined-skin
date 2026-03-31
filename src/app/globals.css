@@ -4,6 +4,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+/* Custom fonts from original site */
+@font-face {
+  font-family: 'CircleBook';
+  src: url('https://refined.skin/wp-content/uploads/et-fonts/Circle-Book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiftyFifty';
+  src: url('https://refined.skin/wp-content/uploads/et-fonts/FiftyFifty-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiftyFifty';
+  src: url('https://refined.skin/wp-content/uploads/et-fonts/FiftyFifty-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

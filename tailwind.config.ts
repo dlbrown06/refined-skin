@@ -10,19 +10,19 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          charcoal: '#3a4a4d',
-          dark: '#2d3b3e',
-          beige: '#c5b9a8',
-          'beige-light': '#d4cab9',
-          cream: '#f5f0eb',
-          'warm-gray': '#b8a99a',
+          charcoal: '#2b3436',
+          dark: '#292d32',
+          beige: '#cfcbc2',
+          'beige-light': '#d9d6ce',
+          cream: '#faf9f5',
+          'warm-gray': '#a1988d',
           sage: '#8a9a8e',
           gold: '#c5a87e',
         },
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
-        sans: ['"Helvetica Neue"', 'Arial', 'sans-serif'],
+        serif: ['"FiftyFifty"', '"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"CircleBook"', '"Helvetica Neue"', 'Arial', 'sans-serif'],
       },
       letterSpacing: {
         'widest-xl': '0.25em',
