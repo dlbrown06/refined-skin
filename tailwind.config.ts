@@ -25,7 +25,7 @@ const config: Config = {
         sans: ['"CircleBook"', '"Helvetica Neue"', 'Arial', 'sans-serif'],
       },
       letterSpacing: {
-        'widest-xl': '0.25em',
+        'widest-xl': '4px',
       },
     },
   },
