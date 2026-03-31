@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  eslint: {
+    // Disable ESLint during builds - lint separately in CI
+    ignoreDuringBuilds: true,
+  },
   images: {
     remotePatterns: [
       {
