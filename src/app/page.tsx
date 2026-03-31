@@ -151,7 +151,7 @@ export default function Home() {
             </p>
             <p className="mt-6 font-serif text-3xl italic text-brand-charcoal">Anna</p>
             <p className="text-sm text-brand-warm-gray mt-1">Acne Client</p>
-            <a href="#book-now" className="btn-outline-dark mt-8">
+            <a href="#book-now" className="btn-primary mt-8">
               Book Your Acne Consult and Treatment
             </a>
           </div>
@@ -204,7 +204,7 @@ export default function Home() {
           </div>
         </div>
         <div className="text-center mt-12">
-          <a href="#book-now" className="btn-outline-dark">
+          <a href="#book-now" className="btn-primary">
             Book Free Acne Discovery Call
           </a>
         </div>
