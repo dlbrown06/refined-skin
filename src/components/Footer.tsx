@@ -70,13 +70,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Logo */}
-        <div className="mt-16 text-center">
-          <p className="font-serif text-3xl italic text-brand-beige/60">
-            refined<span className="text-brand-beige/40">.</span>skin
-          </p>
-          <p className="text-xs tracking-widest-xl text-brand-beige/40 mt-1 uppercase">
-            & Acne Clinic
-          </p>
+        <div className="mt-16 flex justify-center">
+          <img
+            src="https://i0.wp.com/refined.skin/wp-content/uploads/2024/01/refined-skin-and-acne-clinic-logo.png"
+            alt="Refined Skin & Acne Clinic"
+            className="h-20 w-auto opacity-60"
+          />
         </div>
       </div>
     </footer>

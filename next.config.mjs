@@ -4,7 +4,15 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'images.unsplash.com',
+        hostname: 'i0.wp.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'refined.skin',
+      },
+      {
+        protocol: 'https',
+        hostname: 'imagedelivery.net',
       },
     ],
   },

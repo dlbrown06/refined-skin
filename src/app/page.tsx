@@ -9,7 +9,7 @@ export default function Home() {
         className="relative flex min-h-screen items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1920&q=80')",
+            "url('https://i0.wp.com/refined.skin/wp-content/uploads/2024/03/refined-skin.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/20" />
@@ -35,7 +35,13 @@ export default function Home() {
       <section className="bg-brand-dark py-24 px-6">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <div className="text-brand-beige font-serif text-5xl italic mb-4">r</div>
+            <div className="mb-6">
+              <img
+                src="https://i0.wp.com/refined.skin/wp-content/uploads/2025/03/ultra_fast_teardrop-1.gif"
+                alt="Refined Skin icon"
+                className="h-20 w-auto mx-auto"
+              />
+            </div>
             <p className="section-heading text-brand-beige/70">
               Our Services
             </p>
@@ -44,13 +50,11 @@ export default function Home() {
             {/* Acne Clinic */}
             <Link href="/acne-clinic" className="group">
               <div className="border border-white/20 p-1">
-                <div className="aspect-[4/3] bg-brand-charcoal/50 flex items-center justify-center overflow-hidden">
-                  <div
-                    className="w-full h-full bg-cover bg-center opacity-80 group-hover:opacity-100 transition-opacity"
-                    style={{
-                      backgroundImage:
-                        "url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80')",
-                    }}
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="https://i0.wp.com/refined.skin/wp-content/uploads/2024/01/Refined-Skin-Website-Images-8.png"
+                    alt="Acne Clinic"
+                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                   />
                 </div>
               </div>
@@ -66,13 +70,11 @@ export default function Home() {
             {/* Treatments */}
             <Link href="/treatments" className="group">
               <div className="border border-white/20 p-1">
-                <div className="aspect-[4/3] bg-brand-charcoal/50 flex items-center justify-center overflow-hidden">
-                  <div
-                    className="w-full h-full bg-cover bg-center opacity-80 group-hover:opacity-100 transition-opacity"
-                    style={{
-                      backgroundImage:
-                        "url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80')",
-                    }}
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="https://i0.wp.com/refined.skin/wp-content/uploads/2024/01/Refined-Skin-Website-Images-7.png"
+                    alt="Treatments"
+                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                   />
                 </div>
               </div>
@@ -93,13 +95,11 @@ export default function Home() {
               className="group"
             >
               <div className="border border-white/20 p-1">
-                <div className="aspect-[4/3] bg-brand-charcoal/50 flex items-center justify-center overflow-hidden">
-                  <div
-                    className="w-full h-full bg-cover bg-center opacity-80 group-hover:opacity-100 transition-opacity"
-                    style={{
-                      backgroundImage:
-                        "url('https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&q=80')",
-                    }}
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src="https://i0.wp.com/refined.skin/wp-content/uploads/2023/11/8.png"
+                    alt="Shop Skincare & Tools"
+                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                   />
                 </div>
               </div>
@@ -118,27 +118,39 @@ export default function Home() {
       <section className="bg-brand-cream py-20 px-6">
         <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
-            <div className="text-brand-beige/40 font-serif text-3xl italic mb-4">
-              refined<span className="text-brand-beige/30">.</span>skin
-            </div>
             <div className="flex gap-4">
-              <div className="w-40 h-48 bg-brand-beige/30 rounded" />
-              <div className="w-40 h-48 bg-brand-beige/30 rounded mt-8" />
+              <div className="w-1/2 overflow-hidden rounded-sm">
+                <img
+                  src="https://i0.wp.com/refined.skin/wp-content/uploads/2023/11/Untitled-design-36.png"
+                  alt="Before treatment"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="w-1/2 overflow-hidden rounded-sm mt-8">
+                <img
+                  src="https://i0.wp.com/refined.skin/wp-content/uploads/2024/01/Refined-Skin-Brand-Update-Draft-4-1000-x-1300-px.png"
+                  alt="After treatment"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
           </div>
           <div className="md:w-1/2">
-            <h3 className="font-serif text-4xl italic text-brand-charcoal">
-              Anna
+            <h3 className="font-serif text-4xl italic text-brand-charcoal mb-2">
+              Clear skin confidence
             </h3>
-            <p className="text-sm text-brand-warm-gray mt-1">Acne Client</p>
             <p className="mt-6 text-brand-charcoal/70 text-sm leading-relaxed">
-              Jamie is simply amazing. I&apos;ve never had an esthetician or
+              &ldquo;Jamie is simply amazing. I&apos;ve never had an esthetician or
               dermatologist be so kind, attentive, knowledgeable, and helpful.
+            </p>
+            <p className="mt-4 text-brand-charcoal/70 text-sm leading-relaxed">
               Jamie is a wonderful educator and supports all her treatments with
               research. I am SO grateful for her holistic approach and
               professional-grade treatments. My painful skin condition was truly
-              healed from the inside out! I recommend her to everyone!
+              healed from the inside out! I recommend her to everyone!&rdquo;
             </p>
+            <p className="mt-6 font-serif text-3xl italic text-brand-charcoal">Anna</p>
+            <p className="text-sm text-brand-warm-gray mt-1">Acne Client</p>
             <a href="#book-now" className="btn-outline-dark mt-8">
               Book Your Acne Consult and Treatment
             </a>
@@ -211,26 +223,29 @@ export default function Home() {
               their skin health journey. I left my corporate job to become an
               advanced esthetician, utilizing a holistic and science-backed
               approach to improve your skin&apos;s appearance and health. It&apos;s my
-              mission to help you feel more comfortable in your skin. Let&apos;s get
-              clear together.
+              mission to help you feel more comfortable in your skin.
             </p>
-            <p className="mt-4 text-sm font-semibold text-brand-charcoal">
-              Jamie Brown &ndash; Advanced Esthetician & Acne Coach
+            <p className="mt-4 italic text-brand-charcoal/80">
+              Let&apos;s get clear together.
+            </p>
+            <p className="mt-6 font-serif text-2xl italic text-brand-charcoal">
+              Jamie Brown
+            </p>
+            <p className="text-sm text-brand-charcoal/60">
+              Advanced Esthetician & Acne Coach
             </p>
             <Link
               href="/meet-jamie"
-              className="mt-6 inline-block text-sm text-brand-charcoal underline underline-offset-4 hover:text-brand-charcoal/70 transition-colors"
+              className="btn-outline-dark mt-8"
             >
-              learn more
+              Learn More
             </Link>
           </div>
           <div className="md:w-1/2">
-            <div
-              className="aspect-[3/4] bg-cover bg-center rounded-sm"
-              style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80')",
-              }}
+            <img
+              src="https://i0.wp.com/refined.skin/wp-content/uploads/2024/01/Refined-Skin-Brand-Update-Draft-4-1000-x-1300-px.png"
+              alt="Jamie Brown - Advanced Esthetician"
+              className="w-full h-auto rounded-sm"
             />
           </div>
         </div>
@@ -241,7 +256,7 @@ export default function Home() {
         className="relative py-32 px-6 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1920&q=80')",
+            "url('https://i0.wp.com/refined.skin/wp-content/uploads/2023/11/shutterstock_1868918950.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/30" />

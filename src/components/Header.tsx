@@ -17,10 +17,14 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-brand-dark/95 backdrop-blur-sm">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link href="/" className="text-white font-serif text-xl italic">
-          refined<span className="text-brand-beige">.</span>skin
+        <Link href="/" className="shrink-0">
+          <img
+            src="https://i0.wp.com/refined.skin/wp-content/uploads/2024/01/refined-skin-and-acne-clinic-logo.png"
+            alt="Refined Skin & Acne Clinic"
+            className="h-16 w-auto"
+          />
         </Link>
 
         {/* Desktop Nav */}

@@ -16,7 +16,7 @@ export default function HeroSection({
   ctaHref = "#book-now",
   secondaryCtaText,
   secondaryCtaHref,
-  bgImage = "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1920&q=80",
+  bgImage = "https://i0.wp.com/refined.skin/wp-content/uploads/2024/03/refined-skin.jpg",
   overlay = true,
 }: HeroSectionProps) {
   return (
