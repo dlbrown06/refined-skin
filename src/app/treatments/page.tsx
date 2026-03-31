@@ -58,7 +58,7 @@ export default function TreatmentsPage() {
         subtitle="Skincare Treatments"
         title="Your healthiest skin awaits."
         ctaText="I'm Ready for a Transformation"
-        bgImage="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1920&q=80"
+        bgImage="https://i0.wp.com/refined.skin/wp-content/uploads/2024/03/refined-skin.jpg"
       />
 
       {/* Intro */}
@@ -78,27 +78,41 @@ export default function TreatmentsPage() {
       {/* Quick Options */}
       <section className="py-16 px-6 bg-brand-cream">
         <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-white p-8 rounded-sm shadow-sm">
-            <h3 className="font-serif text-2xl italic mb-1">The Refined Routine</h3>
-            <p className="text-lg font-light text-brand-charcoal">$65 &middot; 45 minutes</p>
-            <ul className="mt-6 space-y-2 text-sm text-brand-charcoal/70">
-              <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Consultation and skin analysis</li>
-              <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Mini facial</li>
-              <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Customized skincare routine document</li>
-              <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Treatment plan recommendations</li>
-            </ul>
-            <a href="#book-now" className="btn-primary mt-6">Book It</a>
+          <div className="bg-white rounded-sm shadow-sm overflow-hidden">
+            <img
+              src="https://i0.wp.com/refined.skin/wp-content/uploads/2024/03/Untitled-design-74.png"
+              alt="The Refined Routine"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-8">
+              <h3 className="font-serif text-2xl italic mb-1">The Refined Routine</h3>
+              <p className="text-lg font-light text-brand-charcoal">$65 &middot; 45 minutes</p>
+              <ul className="mt-6 space-y-2 text-sm text-brand-charcoal/70">
+                <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Consultation and skin analysis</li>
+                <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Mini facial</li>
+                <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Customized skincare routine document</li>
+                <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Treatment plan recommendations</li>
+              </ul>
+              <a href="#book-now" className="btn-primary mt-6">Book It</a>
+            </div>
           </div>
-          <div className="bg-white p-8 rounded-sm shadow-sm">
-            <h3 className="font-serif text-2xl italic mb-1">The First Timer Facial</h3>
-            <p className="text-lg font-light text-brand-charcoal">$175 &middot; 1.5 hours</p>
-            <ul className="mt-6 space-y-2 text-sm text-brand-charcoal/70">
-              <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Consultation and skin analysis</li>
-              <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> 1 hour facial with neck/shoulder/hand/arm massage</li>
-              <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Customized skincare routine document</li>
-              <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Treatment plan recommendations</li>
-            </ul>
-            <a href="#book-now" className="btn-primary mt-6">Book It</a>
+          <div className="bg-white rounded-sm shadow-sm overflow-hidden">
+            <img
+              src="https://i0.wp.com/refined.skin/wp-content/uploads/2024/03/Refined-Skin2.png"
+              alt="The First Timer Facial"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-8">
+              <h3 className="font-serif text-2xl italic mb-1">The First Timer Facial</h3>
+              <p className="text-lg font-light text-brand-charcoal">$175 &middot; 1.5 hours</p>
+              <ul className="mt-6 space-y-2 text-sm text-brand-charcoal/70">
+                <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Consultation and skin analysis</li>
+                <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> 1 hour facial with neck/shoulder/hand/arm massage</li>
+                <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Customized skincare routine document</li>
+                <li className="flex gap-2"><span className="text-brand-sage">&#10003;</span> Treatment plan recommendations</li>
+              </ul>
+              <a href="#book-now" className="btn-primary mt-6">Book It</a>
+            </div>
           </div>
         </div>
       </section>
@@ -252,8 +266,11 @@ export default function TreatmentsPage() {
             lifestyle, nutrition, treatments, and a simple skincare regimen. Our
             approach is customized to each client&apos;s unique skin concerns.
           </p>
-          <p className="mt-4 text-sm font-semibold">
-            Jamie Brown &ndash; Advanced Esthetician & Acne Coach
+          <p className="mt-4 font-serif text-xl italic">
+            Jamie Brown
+          </p>
+          <p className="text-sm text-brand-charcoal/60">
+            Advanced Esthetician & Acne Coach
           </p>
           <a href="#book-now" className="btn-primary mt-8">
             Book Your First Timer Facial

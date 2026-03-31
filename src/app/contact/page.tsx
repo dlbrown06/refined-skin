@@ -10,10 +10,16 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 px-6 bg-brand-dark">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="section-heading text-brand-beige/70">Contact Us</p>
-          <h1 className="font-serif text-5xl md:text-6xl italic text-white">
+      <section
+        className="relative flex min-h-[60vh] items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: "url('https://i0.wp.com/refined.skin/wp-content/uploads/2023/12/EHP-123.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative z-10 text-center px-6">
+          <p className="section-heading text-white/80">Contact Us</p>
+          <h1 className="font-serif text-5xl md:text-6xl italic text-white mt-4">
             Unlock Clear Skin
           </h1>
         </div>
@@ -56,6 +62,13 @@ export default function ContactPage() {
               <div>
                 <p className="font-semibold text-brand-charcoal mb-1">Location</p>
                 <p>134 E Main St<br />Leipsic, OH 45856</p>
+              </div>
+              <div className="pt-4">
+                <img
+                  src="https://i0.wp.com/refined.skin/wp-content/uploads/2023/12/Untitled-design-57.png"
+                  alt="Refined Skin Clinic"
+                  className="w-full h-auto rounded-sm mt-4"
+                />
               </div>
               <div className="pt-4 flex gap-4">
                 <a
